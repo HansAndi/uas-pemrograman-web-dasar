@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+@font-face {
+    src: url(Gutter-Butter.otf);
+    font-family: Gutter-Butter;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #FCF8E8;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FCF8E8;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    background-color: #e2dfd0;
+    z-index: 1;
+}
+
+header .logo{
+    position: relative;
+    max-width: 80px;   
+}
+
+header a{
+    text-decoration: none;
+    color: #284136;
+}
+
+header ul{
+    /* position: relative; */
+    display: flex;
+}
+
+header ul li{
+    /* display: inline-block; */
+    list-style: none;
+}
+
+
+header ul li a{
+    display: block;
+    position: relative;
+    color: #333;
+    font-weight: 400;
+    margin-left: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+header ul li a:hover{
+    color: #284136;
+    transition: all .3s ease-in-out;
+}
+
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox{
+    position: relative;
+    max-width: 600px;
+}
+
+.content .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+
+.content .textBox h2 span{
+    color: #284136;
+    font-size: 1.2em;
+    font-weight: 900;
+    font-family: Gutter-Butter;
+    letter-spacing: 5px;
+}
+
+.content .textBox p{
+    color: #333;
+    text-align: justify;
+}
+
+.content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    background: #284136;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .textBox a:hover{
+    background-color: transparent;
+	border: 2px solid #284136;
+	cursor: pointer;
+    color: #284136;
+    transition: all .3s ease-in-out;
+}
+
+.content .imgBox{
+    width: 600px;
+    height: auto;
+    display: flex;
+    /* margin-right: -15%; */
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+
+.content .imgBox img{
+    max-width: 500px;
+    height: auto;
+    border-radius: 30%;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px);
+}
+
+.thumb li img{
+    max-width: 100px;
+    margin-left: -30px;
+}
+
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #284136;
+    clip-path: circle(600px at right 800px);
+}
+
+.menu {
+    width: 1170px;
+    margin: 100px auto;
+    /* background-color: #284136; */
+}
+
+.section-title {
+    position: relative;
+    text-align: center;
+}
+
+.menus {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.single-menu {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.single-menu img {
+    border-radius: 50%;
+    max-width: 100px;
+    border: 1px dashed #636363;
+    padding: 3px;
+    margin-right: 15px;
+    transition: .3s;
+}
+
+.single-menu:hover img{
+    transform: rotate(360deg);
+}
+
+.single-menu .menu-content h5 {
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+    border-bottom: 1px dashed #222;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.single-menu .menu-content h4 span {
+    color: #222;
+    float: right;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.single-menu .menu-content p{
+    font-size: 14px;
+    max-width: 280px;
+    text-align: justify;
+}
+
+footer{
+    background-color: #e2dfd0;
+    /* padding-top: 50px; */
+    display: grid;
+    place-items: center;
+}
+
+.copyright {
+    text-align: center;
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+}
